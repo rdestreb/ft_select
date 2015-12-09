@@ -17,6 +17,7 @@ HEAD = ft_select.h
 HEADFILES = $(addprefix $(HEADDIR)/, $(HEAD))
 SCRFILES = $(addprefix $(SRCDIR)/, $(SRC))
 SRC =	test.c \
+		print_error.c \
 
 OBJS = $(SCRFILES:.c=.o)
 CC = clang

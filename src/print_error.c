@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_select.h                                        :+:      :+:    :+:   */
+/*   print_error.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rdestreb <rdestreb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/20 12:07:01 by rdestreb          #+#    #+#             */
-/*   Updated: 2015/11/20 12:08:05 by rdestreb         ###   ########.fr       */
+/*   Created: 2015/10/26 11:21:21 by rdestreb          #+#    #+#             */
+/*   Updated: 2015/10/26 11:21:25 by rdestreb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	FT_SELECT_H
-# define FT_SELECT_H
+#include "ft_select.h"
 
-# include <termios.h>
-# include <stdlib.h>
-# include <termcap.h>
-# include "../libft/libft.h"
-
-struct	termios t_term;
-
-void	print_error(char *msg);
-
-#endif
+void	print_error(char *msg)
+{
+	ft_putstr_fd("\033[31mft_select : Error : ", 2);
+	ft_putendl_fd(msg, 2);
+	exit(2);
+}
