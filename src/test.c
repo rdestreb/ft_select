@@ -6,7 +6,7 @@
 /*   By: rdestreb <rdestreb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/19 14:51:53 by rdestreb          #+#    #+#             */
-/*   Updated: 2015/11/19 15:24:46 by rdestreb         ###   ########.fr       */
+/*   Updated: 2015/12/17 11:16:44 by rdestreb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,6 @@ int	main(int ac, char **av, char **env)
 //		if (stock[0] == 27)
 		printf("%s\n", stock);
 	}
+	//coucou
 	return (0);
 }
